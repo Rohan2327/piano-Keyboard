@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <img src="/piano project/pexels-snapwire-6966.jpg" alt="">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <audio id="audio1" controls style="display:none">
+    <source src="/piano project/clap.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio2" controls style="display:none">
+    <source src="/piano project/hihat.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio3" controls style="display:none">
+    <source src="/piano project/kick.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio4" controls style="display:none">
+    <source src="/piano project/openhat.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio5" controls style="display:none">
+    <source src="/piano project/boom.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio6" controls style="display:none">
+    <source src="/piano project/ride.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio7" controls style="display:none">
+    <source src="/piano project/snare.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio8" controls style="display:none">
+    <source src="/piano project/tom.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="audio9" controls style="display:none">
+    <source src="/piano project/tink.wav" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <style>
+    .btn {
+      /* margin: 300px 300px; */
+      margin-top: -400px;
+      position: relative;
+      text-align: center;
+      font-size: 40px;
+      border-radius: 15px;
+
+    }
+
+    .but {
+
+
+      height: 80px;
+      width: 80px;
+      margin: 25px;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 15px;
+      background-color:  black;
+      color: rgb(235, 229, 229);
+      font-size: 20px;
+    }
+   
+
+    img {
+      
+      position: relative;
+      height: 600px;
+      width: 100%;
+
+
+    }
+  
+    
+    p{
+      color: aqua;
+      margin-top: 3px;
+      font-size: 15px;
+      text-align: center;
+      
+    }
+    h1{
+      position: absolute;
+      font-size: 40px;
+      font-family: 'Merriweather', serif;
+      
+      top: 60px;
+      left: 250px;
+      color: rgb(80, 78, 78);
+    }
+ 
+  </style>
+</head>
+
+<body id="body">
+  <header>
+    <h1>Press below buttons on keyboard to make sound</h1>
+    <div class="btn">
+      <button id="a" class="but" >
+        A
+       <p>clap</p>
+       <audio id="aud1" src=""></audio>
+       
+      </button>
+      <button id="s" class="but">
+        S
+       <p> hihat</p>
+      </button>
+      <button id="d" class="but">
+        D
+       <p> kick</p>
+      </button>
+      <button id="f" class="but">
+        F
+      <p>openhat</p>
+      </button>
+      <button id="g" class="but">
+        G
+        <p>boom</p>
+      </button>
+      <button id="h" class="but">
+        H
+       <p> ride</p>
+      </button>
+      <button id="j" class="but">
+        J
+       <p> snare</p>
+      </button>
+      <button id="k" class="but">
+        K
+        <p>tommy</p>
+      </button>
+      <button id="l" class="but">
+        L
+       <p> tinkk</p>
+      </button>
+    </div>
+
+  </header>
+
+  <SCript>
+    document.body.addEventListener("keydown", function (e) {
+      var keycode = e.keyCode;
+     
+      if(keycode===65){
+        console.log("A=> keycode "+keycode + " was pressed");
+        document.getElementById('audio1').play();
+  
+}
+else if(keycode===83){
+  console.log("S=> keycode "+keycode + " was pressed");
+  document.getElementById('audio2').play();
+}
+else if(keycode===68){
+  console.log("D=> keycode "+keycode + " was pressed");
+  document.getElementById('audio3').play();
+}
+else if(keycode===70){
+  console.log("F=> keycode "+keycode + " was pressed");
+  document.getElementById('audio4').play();
+}
+else if(keycode===71){
+  console.log("G=> keycode "+keycode + " was pressed");
+  document.getElementById('audio5').play();
+}
+else if(keycode===72){
+  console.log("H=> keycode "+keycode + " was pressed");
+  document.getElementById('audio6').play();
+}
+else if(keycode===74){
+  console.log("J=> keycode "+keycode + " was pressed");
+  document.getElementById('audio7').play();
+}
+else if(keycode===75){
+  console.log("K=> keycode "+keycode + " was pressed");
+  document.getElementById('audio8').play();
+}
+else if(keycode===76){
+  console.log(" L=> keycode "+keycode + " was pressed");
+  document.getElementById('audio9').play();
+}
+    
+      });
+
+
+  </SCript>
+</body>
+
+</html>
